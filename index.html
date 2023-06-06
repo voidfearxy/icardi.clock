@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Digital Clock</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<button onclick="var el = document.getElementById('element'); el.requestFullscreen();">
+			<i class="material-icons zoom_out_map">&#xe56b;</i>
+		</button>
+		<div class="element" id="element">
+
+			<div class="main">
+				<div class="clock">
+					<span id="hour"></span>
+					<span id="minute"></span>
+					<span id="second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
