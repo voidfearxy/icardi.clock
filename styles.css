@@ -1,102 +1,86 @@
-	@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: url("background/backg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	background-color: black;
+}
+.main {
+	max-width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.clock {
+	color: black;
+	text-align: center;
+	font-size: 50px;
+	font-family: Orbitron;
+}
+.element:-ms-fullscreen p {
+	visibility: visible;
+}
+.element:fullscreen {
+	background: url("background/backg.jpg");
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+}
+button {
+	color: aliceblue;
+	background:none;
+	border: none;
+	font-size: 20px;
+}
+#hour{
+	color: red;
+}
+#minute{
+	color: white;
 
-	* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
-
-	body {
-		background: url("background/backg.jpg");
+}
+#second{
+	color: yellow;
+}
+*:fullscreen {
+	cursor: none;
+}
+@media(max-width:950px){
+	.element:fullscreen {
+		background-position: top;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-position: center top;
-		background-color: black;
 	}
-
-	.main {
-		max-width: 300px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+	body{
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 	}
+}
 
-
-	.clock {
-		color: black;
-		text-align: center;
-		font-size: 50px;
-		font-family: Orbitron;
-	}
-
-
-	.element:-ms-fullscreen p {
-		visibility: visible;
-	}
-
+@media(min-width:950px){
 	.element:fullscreen {
-		background: url("background/backg.jpg");
-		background-color: black;
-		width: 100vw;
-		height: 100vh;
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 	}
+	body{
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+}
 
 
-	button {
-
-		color: aliceblue;
-		background-color: black;
-		font-size: 20px;
-	}
-
-	#hour{
-		color: red;
-	}
-	#minute{
-		color: white;
-	
-	}
-	#second{
-		color: yellow;
-	}
-
-
-	*:fullscreen {
-		cursor: none;
-	}
-
-
-	@media(max-width:950px){
-		.element:fullscreen {
-			background-position: top;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		body{
-			background-position: top;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-	}
-	
-	@media(min-width:950px){
-		.element:fullscreen {
-			background-position: top;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		body{
-			background-position: top;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-	}
-	
-	
-	
